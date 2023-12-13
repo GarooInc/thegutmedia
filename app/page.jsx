@@ -6,6 +6,8 @@ import ButtonNormal from '@/components/ButtonNormal/ButtonNormal'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import logosArray from '@/logos'
 import ClientLogos from '@/components/ClientLogos/ClientLogos'
+import Prices from '@/components/Prices/Prices'
+import Footer from '@/components/Footer/Footer'
 
 const PrincipalPage = () => {
   return (
@@ -36,7 +38,7 @@ const PrincipalPage = () => {
                 </div>
                 <div className="flex justify-center items-center md:w-1/2 glassmorphism mx-4">
                 <Image
-                        src="/assets/images/placeholder.png"
+                        src="/assets/images/placeholder2.png"
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -53,10 +55,22 @@ const PrincipalPage = () => {
             <ClientLogos logos={logosArray} />
         </div>
         </section>
-        <section id='/pricing' className="portfolio">
-            <h1>Pricing</h1>
+        <section id='/prices' className="portfolio">
+            <div className="flex flex-col py-10 md:py-20 gap-2">
+                <div className="flex flex-col justify-center items-center gap-4">
+                    <Tittle title="Precios" />
+                </div>
+                <Prices />
+            </div>
+        </section>
+        <section id='/contact' className="w-full flex justify-center py-10">
+            <div className="flex flex-col justify-center items-center md:w-2/3 gap-4 text-center">
+                    <Tittle title="Con The Gut Media, tu marca cobra vida en cada tienda." center />
+                    <ButtonDark text="Me interesa" href="#/contact" />
+            </div>
         </section>
         <footer className="footer">
+            <Footer />
         </footer>
     </div>
   )
