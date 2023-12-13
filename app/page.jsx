@@ -36,13 +36,12 @@ const PrincipalPage = () => {
                     <Tittle title="Nuestras pantallas en acción" />
                     <Subtitle text="Explora nuestras ubicaciones estratégicas en tiendas de barrio y pulperías, llevando la publicidad directamente a la cotidianidad de las comunidades. " />
                 </div>
-                <div className="flex justify-center items-center md:w-1/2 glassmorphism">
+                <div className="flex justify-center items-center md:w-1/2 ">
                 <Image
                         src="/assets/images/placeholder.png"
                         alt="Picture of the author"
                         width={500}
                         height={500}
-                        className='object-cover w-full h-full'
                     />
                 </div>
             </div>
