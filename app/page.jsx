@@ -13,7 +13,7 @@ const PrincipalPage = () => {
   return (
     <div className="w-full isolate px-8 pt-14 lg:px-10">
         <section id='/' className="w-full relative">
-            <div className="flex md:flex-row flex-col py-28 md:min-h-screen">
+            <div className="flex md:flex-row flex-col py-24 md:min-h-screen">
                 <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
                     <Tittle title="Conexiones visuales para tu marca" />
                     <Subtitle text="Nuestras pantallas transforman espacios locales en oportunidades publicitarias." />
@@ -31,18 +31,18 @@ const PrincipalPage = () => {
             </div>
         </section>
         <section id='/screens' className="w-full ">
-            <div className="flex md:flex-row flex-col py-10 md:py-20 gap-2">
-                    <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
-                    <Tittle title="Nuestras pantallas en acción" />
-                    <Subtitle text="Explora nuestras ubicaciones estratégicas en tiendas de barrio y pulperías, llevando la publicidad directamente a la cotidianidad de las comunidades. " />
-                </div>
-                <div className="flex justify-center items-center md:w-1/2 ">
+            <div className="flex md:flex-row flex-col-reverse py-10 md:py-20 gap-2">
+            <div className="flex justify-center items-center md:w-1/2 ">
                 <Image
                         src="/assets/images/placeholder.png"
                         alt="Picture of the author"
                         width={500}
                         height={500}
                     />
+                </div>
+                <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
+                    <Tittle title="Nuestras pantallas en acción" />
+                    <Subtitle text="Explora nuestras ubicaciones estratégicas en tiendas de barrio y pulperías, llevando la publicidad directamente a la cotidianidad de las comunidades. " />
                 </div>
             </div>
         </section>
