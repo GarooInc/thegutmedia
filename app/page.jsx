@@ -15,8 +15,8 @@ const PrincipalPage = () => {
         <section id='/' className="w-full pt-20 lg:pt-40">
             <div className="flex md:flex-row flex-col justify-between">
                 <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
-                    <Tittle title="Conexiones visuales para tu marca" />
-                    <Subtitle text="Nuestras pantallas transforman espacios locales en oportunidades publicitarias." />
+                    <Tittle title="Experiencias visuales" />
+                    <Subtitle text="En Tiendas de Barrio, nuestras pantallas digitales se convierten en oportunidades publicitarias." />
                     <ButtonDark text="Quiero promocionar mi marca" href="#/contact" />
                     <ButtonNormal text="Quiero promocionar en mi tienda" href="#/screens" />
                 </div>
@@ -41,12 +41,12 @@ const PrincipalPage = () => {
                         />
                 </div>
                 <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
-                    <Tittle title="Nuestras pantallas en acción" />
-                    <Subtitle text="Explora nuestras ubicaciones estratégicas en tiendas de barrio y pulperías, llevando la publicidad directamente a la cotidianidad de las comunidades. " />
+                    <Tittle title="Explora nuestras ubicaciones estratégicas" />
+                    <Subtitle text="Complementamos la publicidad tradicional comunicando directamente al consumidor en el momento de compra." />
                 </div>
             </div>
         </section>
-        <section id='/clients' className="text-center w-full py-10">
+        <section id='/clients' className="text-center w-full py-10 hidden">
             <div className="flex flex-col  gap-2">
                 <div className="flex flex-col justify-center items-center gap-4">
                     <Tittle title="Nuestros clientes" />
