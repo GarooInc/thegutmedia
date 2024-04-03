@@ -11,9 +11,9 @@ import Footer from '@/components/Footer/Footer'
 
 const PrincipalPage = () => {
   return (
-    <div className="w-full isolate px-8 pt-14 lg:px-10">
-        <section id='/' className="w-full relative">
-            <div className="flex md:flex-row flex-col py-24 md:min-h-screen">
+    <div className="w-full isolate px-8 lg:px-20 pt-10 ">
+        <section id='/' className="w-full pt-20 lg:pt-40">
+            <div className="flex md:flex-row flex-col justify-between">
                 <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
                     <Tittle title="Conexiones visuales para tu marca" />
                     <Subtitle text="Nuestras pantallas transforman espacios locales en oportunidades publicitarias." />
@@ -22,7 +22,7 @@ const PrincipalPage = () => {
                 </div>
                 <div className="flex justify-center items-center md:w-1/2">
                     <Image
-                        src="/assets/images/placeholder.png"
+                        src="/assets/images/mostrador.png"
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -30,15 +30,15 @@ const PrincipalPage = () => {
                 </div>
             </div>
         </section>
-        <section id='/screens' className="w-full ">
-            <div className="flex md:flex-row flex-col-reverse py-10 md:py-20 gap-2">
-            <div className="flex justify-center items-center md:w-1/2 ">
-                <Image
-                        src="/assets/images/placeholder.png"
-                        alt="Picture of the author"
-                        width={500}
-                        height={500}
-                    />
+        <section id='/screens' className="w-full py-10">
+            <div className="flex md:flex-row flex-col-reverse  gap-2">
+                <div className="flex justify-center items-center md:w-1/2 ">
+                    <Image
+                            src="/assets/images/tienda.png"
+                            alt="Picture of the author"
+                            width={600}
+                            height={600}
+                        />
                 </div>
                 <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
                     <Tittle title="Nuestras pantallas en acción" />
@@ -46,15 +46,15 @@ const PrincipalPage = () => {
                 </div>
             </div>
         </section>
-        <section id='/clients' className="text-center w-full">
-        <div className="flex flex-col py-10 md:py-20 gap-2">
-            <div className="flex flex-col justify-center items-center gap-4">
-                <Tittle title="Nuestros clientes" />
+        <section id='/clients' className="text-center w-full py-10">
+            <div className="flex flex-col  gap-2">
+                <div className="flex flex-col justify-center items-center gap-4">
+                    <Tittle title="Nuestros clientes" />
+                </div>
+                <ClientLogos logos={logosArray} />
             </div>
-            <ClientLogos logos={logosArray} />
-        </div>
         </section>
-        <section id='/prices' className="portfolio">
+        <section id='/prices' className="hidden">
             <div className="flex flex-col py-10 md:py-20 gap-2">
                 <div className="flex flex-col justify-center items-center gap-4">
                     <Tittle title="Precios" />
