@@ -17,8 +17,8 @@ const PrincipalPage = () => {
                 <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-4">
                     <Tittle title="Experiencias visuales" />
                     <Subtitle text="En Tiendas de Barrio, nuestras pantallas digitales se convierten en oportunidades publicitarias." />
-                    <ButtonDark text="Quiero promocionar mi marca" href="#/contact" />
-                    <ButtonNormal text="Quiero promocionar en mi tienda" href="#/screens" />
+                    <ButtonDark text="Quiero promocionar mi marca" href="https://wa.link/rz4mpr" />
+                    <ButtonNormal text="Quiero promocionar en mi tienda" href="https://wa.link/rz4mpr" />
                 </div>
                 <div className="flex justify-center items-center md:w-1/2">
                     <Image
@@ -65,7 +65,7 @@ const PrincipalPage = () => {
         <section id='/contact' className="w-full flex justify-center py-10">
             <div className="flex flex-col justify-center items-center md:w-2/3 gap-4 text-center">
                     <Tittle title="Con The Gut Media, tu marca cobra vida en cada tienda." center />
-                    <ButtonDark text="Me interesa" href="#/contact" />
+                    <ButtonDark text="Me interesa" href="https://wa.link/rz4mpr" />
             </div>
         </section>
         <footer className="footer">
