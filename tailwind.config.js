@@ -35,6 +35,7 @@ module.exports = {
         'grayish': '#f6f5f4',
         "dark-grayish": "#424242",
         "light-grayish": "#474747",
+        "greenish": "#92b582",
       },
     },
   },

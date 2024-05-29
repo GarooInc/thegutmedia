@@ -17,7 +17,7 @@ const NavBar = () => {
     <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between md:justify-start p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:mr-12 lg:flex-none md:flex-1">
-            <a href="#" className="-m-1.5 p-0">
+            <a href="/" className="-m-1.5 p-0">
               <img
                 className="h-10 w-auto"
                 src="/assets/images/logonegro.png"
