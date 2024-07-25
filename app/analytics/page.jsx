@@ -1,7 +1,10 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import { useRouter } from "next/navigation"
+
 
 const Analytics = () => {
+  const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -11,8 +14,15 @@ const Analytics = () => {
     e.preventDefault();
     if (username === 'admin' && password === 'admin123') {
       setIsLoggedIn(true);
+      router.push('/analytics-page');
       setError('');
-    } else {
+    } 
+    else if (username === 'AdbotLicorera' && password === 'Adbot1001' || username === 'Licorera' && password === 'TheGutMedia1001') {
+      setIsLoggedIn(true);
+      router.push('/fotos-licorera');
+      setError('');
+    }
+    else {
       setError('Contraseña o usuario incorrectos');
       setIsLoggedIn(false);
     }
@@ -20,7 +30,6 @@ const Analytics = () => {
 
   return (
     <div className='mt-20 w-full h-screen'>
-      {!isLoggedIn ? (
         <div className='flex flex-col gap-4 items-center justify-center pt-20'>
           <form onSubmit={handleLogin} className='flex flex-col gap-4 items-center w-60'>
             <label className="flex justify-start w-full text-md font-bold text-black font-inter">Usuario</label>
@@ -45,17 +54,6 @@ const Analytics = () => {
             {error && <p className='text-red-500 text-center'>{error}</p>}
           </form>
         </div>
-      ) : (
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://lookerstudio.google.com/embed/reporting/0a7362be-97e9-444c-ac21-132879f25be3/page/2YoyD"
-          frameBorder="0"
-          style={{ border: '0' }}
-          allowFullScreen
-          sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-        ></iframe>
-      )}
     </div>
   );
 }
